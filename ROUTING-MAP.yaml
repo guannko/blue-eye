@@ -1,0 +1,338 @@
+# 🗺️ ROUTING MAP - Blue Eye v2.0
+# Where everything goes automatically!
+
+# ========================================
+# AUTOSAVES - CRITICAL! Always to Annoris!
+# ========================================
+
+autosaves:
+  pattern: "autosave_*.md"
+  target: "Annoris/autosaves/"
+  priority: CRITICAL
+  action: FAST_SAVE
+  compress: false
+  note: "Annoris = unlimited storage for history!"
+
+session_backups:
+  pattern: "session_*.md"
+  target: "Annoris/sessions/"
+  priority: CRITICAL
+  action: FAST_SAVE
+  compress: false
+
+# ========================================
+# CODE - To Project Repos
+# ========================================
+
+offerspsp_code:
+  pattern: "*.py"
+  metadata_required: ["project: offerspsp"]
+  target: "offerspsp-mvp/"
+  priority: HIGH
+  action: VALIDATE_SYNTAX
+  validate: true
+
+geo_backend:
+  pattern: "*.py"
+  metadata_required: ["project: geo"]
+  target: "brain-index-geo-monolith/"
+  priority: HIGH
+  action: VALIDATE_SYNTAX
+  validate: true
+
+geo_frontend:
+  pattern: "*.tsx|*.jsx|*.ts|*.js"
+  metadata_required: ["project: geo-frontend"]
+  target: "brain-index-site/"
+  priority: HIGH
+  action: VALIDATE_SYNTAX
+  validate: true
+
+# ========================================
+# CONFIGS - Stay in Blue Eye Core!
+# ========================================
+
+blue_eye_configs:
+  pattern: "*.json|*.yaml"
+  metadata_required: ["type: config"]
+  target: "blue-eye/"
+  priority: EMERGENCY
+  action: IMMEDIATE_UPDATE
+  webhook: true
+  note: "Emergency = Claude reloads immediately!"
+
+# ========================================
+# DOCUMENTATION - To cortex-memory
+# ========================================
+
+docs:
+  pattern: "*.md"
+  exclude: ["autosave_*", "session_*", "README.md"]
+  target: "cortex-memory/docs/"
+  priority: MEDIUM
+  action: NORMAL_SAVE
+  compress: false
+
+# ========================================
+# MAKE.COM - To Annoris/make/
+# ========================================
+
+make_blueprints:
+  pattern: "*_blueprint.json"
+  target: "Annoris/make/blueprints/"
+  priority: HIGH
+  action: FAST_SAVE
+  note: "Make.com scenarios ready for Boris import!"
+
+make_data:
+  pattern: "make_*.json|make_*.yaml"
+  target: "Annoris/make/data/"
+  priority: MEDIUM
+  action: NORMAL_SAVE
+
+# ========================================
+# ARCHIVES - Compress + Archive
+# ========================================
+
+backups:
+  pattern: "backup_*"
+  target: "cortex-memory/archive/"
+  priority: LOW
+  action: COMPRESS_ARCHIVE
+  compress: true
+  compress_level: 9
+
+old_data:
+  pattern: "archive_*"
+  target: "cortex-memory/archive/"
+  priority: LOW
+  action: COMPRESS_ARCHIVE
+  compress: true
+
+# ========================================
+# TEMPORARY - Delete after use!
+# ========================================
+
+temp_files:
+  pattern: "temp_*|tmp_*"
+  target: "NOWHERE"
+  priority: LOW
+  action: DELETE_AFTER_1_HOUR
+  note: "Temp files don't pollute repos!"
+
+# ========================================
+# SIZE-BASED RULES
+# ========================================
+
+size_rules:
+  large_files:
+    condition: "> 50MB"
+    action: COMPRESS_FIRST
+    compress_level: 6
+    note: "Compress before saving anywhere"
+  
+  huge_files:
+    condition: "> 100MB"
+    action: SPLIT_AND_COMPRESS
+    split_size: "50MB"
+    note: "Split into 50MB chunks + compress"
+  
+  small_files:
+    condition: "< 50MB"
+    action: DIRECT_SAVE
+    note: "Save as-is, no compression"
+
+# ========================================
+# PRIORITY LEVELS (Simple!)
+# ========================================
+
+priorities:
+  EMERGENCY:
+    response_time: "< 100ms"
+    webhook: true
+    examples: ["config changes", "system critical"]
+  
+  CRITICAL:
+    response_time: "< 500ms"
+    webhook: false
+    examples: ["autosaves", "session backups"]
+  
+  HIGH:
+    response_time: "< 1s"
+    validate: true
+    examples: ["code files", "make blueprints"]
+  
+  MEDIUM:
+    response_time: "< 5s"
+    validate: false
+    examples: ["docs", "regular data"]
+  
+  LOW:
+    response_time: "> 5s"
+    compress: true
+    examples: ["archives", "backups"]
+
+# ========================================
+# VALIDATION RULES
+# ========================================
+
+validation:
+  forbidden_patterns:
+    - "eval\\s*\\("
+    - "exec\\s*\\("
+    - "__import__\\s*\\("
+    - "DROP\\s+TABLE"
+    - "DELETE\\s+FROM"
+    - "<script[^>]*>"
+    - "javascript:"
+  
+  syntax_check:
+    python: true
+    javascript: true
+    typescript: true
+    json: true
+    yaml: true
+
+# ========================================
+# SPECIAL CASES
+# ========================================
+
+special:
+  dont_save_to_blue_eye:
+    - "autosave_*.md"      # → Annoris
+    - "session_*.md"       # → Annoris
+    - "backup_*"           # → cortex-memory/archive
+    - "*.py"               # → project repos
+    - "*_blueprint.json"   # → Annoris/make
+  
+  always_keep_in_blue_eye:
+    - "README.md"
+    - "ROUTING-MAP.yaml"   # (this file!)
+    - "CURRENT-SESSION.md"
+    - "QUICK-CONTEXT.md"
+    - "JEAN-CLAUDE-DNA.md"
+    - "TRINITY-STATUS.json"
+    - ".gitignore"
+
+# ========================================
+# INTEGRATION WITH EYELIDS
+# ========================================
+
+eyelids_integration:
+  note: "Blue Eye receives, Eyelids distributes!"
+  flow: |
+    1. Claude receives data
+    2. Check ROUTING-MAP.yaml
+    3. Determine target + priority
+    4. Validate if needed
+    5. Save to target repo via GitHub MCP
+    6. Eyelids monitors and cleans Blue Eye
+    7. Blue Eye stays < 15% always!
+
+# ========================================
+# AUTO-CLEANUP RULES
+# ========================================
+
+cleanup:
+  trigger: "blue-eye size > 12%"
+  action: "move old files to targets"
+  
+  never_delete:
+    - "README.md"
+    - "ROUTING-MAP.yaml"
+    - "CURRENT-SESSION.md"
+    - "QUICK-CONTEXT.md"
+    - "JEAN-CLAUDE-DNA.md"
+    - "TRINITY-STATUS.json"
+    - ".gitignore"
+  
+  auto_move_after:
+    - pattern: "autosave_*.md"
+      age: "immediately"
+      target: "Annoris/autosaves/"
+    
+    - pattern: "session_*.md"
+      age: "immediately"
+      target: "Annoris/sessions/"
+    
+    - pattern: "*.md"
+      age: "24 hours"
+      target: "cortex-memory/docs/"
+
+# ========================================
+# METRICS & MONITORING
+# ========================================
+
+monitoring:
+  track:
+    - "total_files_routed"
+    - "saves_to_annoris"
+    - "saves_to_cortex_memory"
+    - "saves_to_project_repos"
+    - "blue_eye_size_percent"
+    - "cleanup_triggers"
+  
+  alerts:
+    - condition: "blue_eye > 13%"
+      action: "WARNING to Boris"
+    
+    - condition: "blue_eye > 15%"
+      action: "EMERGENCY cleanup!"
+    
+    - condition: "autosave stuck in blue-eye"
+      action: "ALERT! Should be in Annoris!"
+
+# ========================================
+# EXAMPLES
+# ========================================
+
+examples:
+  example_1:
+    input: "autosave_2025-09-29_session.md"
+    routing: |
+      → Pattern match: autosave_*.md
+      → Priority: CRITICAL
+      → Target: Annoris/autosaves/
+      → Action: FAST_SAVE (< 500ms)
+      → Result: ✅ Saved to Annoris immediately!
+  
+  example_2:
+    input: "main.py (project: offerspsp)"
+    routing: |
+      → Pattern match: *.py
+      → Metadata: project=offerspsp
+      → Priority: HIGH
+      → Validation: Python syntax ✅
+      → Target: offerspsp-mvp/
+      → Action: VALIDATE_SYNTAX + SAVE
+      → Result: ✅ Saved to offerspsp-mvp/main.py
+  
+  example_3:
+    input: "stripe_analyzer_blueprint.json"
+    routing: |
+      → Pattern match: *_blueprint.json
+      → Priority: HIGH
+      → Target: Annoris/make/blueprints/
+      → Action: FAST_SAVE
+      → Result: ✅ Ready for Boris to import in Make.com!
+
+# ========================================
+# SUMMARY
+# ========================================
+
+summary:
+  blue_eye_role: "Clean receiver - always < 15%"
+  annoris_role: "Unlimited autosaves + make data"
+  cortex_memory_role: "Docs + archives + history"
+  project_repos_role: "Production code"
+  
+  critical_rule: "AUTOSAVES NEVER STAY IN BLUE-EYE!"
+  
+  flow: |
+    Blue Eye receives → Check routing map → Save to target → 
+    Blue Eye stays clean → Next session ready!
+
+---
+
+**Created by Jean Claude v9.01-STABLE**
+*"Autosaves → Annoris, Code → Projects, Blue Eye → Clean!"* 🗺️💎⚡
