@@ -10,11 +10,11 @@
 
 ### Key Innovation:
 - ✅ **ROUTING-MAP.yaml** - Pattern matching for auto-routing
-- ✅ **Reserve slots** - Ready for cache/emergency use
+- ✅ **4 Flex slots** - Ready for cache/emergency use
 - ✅ **Smart validation** - Safety checks built-in
 - ✅ **Auto-cleanup** - Never exceeds 15%
 
-## 📁 STRUCTURE (11 files + 4 reserves)
+## 📁 STRUCTURE (12 files total)
 
 ### CORE FILES (7 - permanent):
 ```
@@ -27,27 +27,26 @@
 └── .gitignore                  # Cleanup rules
 ```
 
-### RESERVE SLOTS (4 - flexible):
+### FLEX SLOTS (4 - minimal, ready to use):
 ```
-├── RESERVE-1.md                # 📦 Cache / Temp data
-├── RESERVE-2.md                # 📦 Processing buffer
-├── RESERVE-3.md                # 📦 Experiments
-└── RESERVE-4.md                # 📦 Emergency backup
+├── SLOT-1.md                   # 📦 95 bytes - Ready
+├── SLOT-2.md                   # 📦 95 bytes - Ready
+├── SLOT-3.md                   # 📦 95 bytes - Ready
+└── SLOT-4.md                   # 📦 95 bytes - Ready
 ```
 
-**Reserve Rules:**
-- Each reserve max 2% of blue-eye
-- Use when needed, clean after
-- Never permanent storage
+**Slot Rules:**
+- Each slot ~100 bytes (minimal!)
+- Use when needed for temp work
+- Clean after use
 - Return to "AVAILABLE" status
 
-### LEGACY (4 - archived):
+### RESEARCH (1 - archived):
 ```
-├── boris-userPreferences-BLUE-EYE.md      # Old v1.0
-├── userPreferences-BLUE-EYE-ULTIMATE.md   # Research
-├── userPreferences-BLUE-EYE-v1.md         # Archive
-└── BLUE-EYE-ARCHITECTURE-v2.md            # Design doc
+└── BLUE-EYE-ARCHITECTURE-v2.md  # Design documentation
 ```
+
+**Total: 12 files, ~9-10% size** ✅
 
 ## 🗺️ ROUTING MAP - THE GAME CHANGER!
 
@@ -79,13 +78,14 @@ AUTOSAVES NEVER STAY IN BLUE-EYE!
 
 ## 📊 SIZE TARGETS
 
-**Current:** ~12-13% (with reserves)
+**Current:** ~9-10% (optimized!)
 **Limit:** 15% maximum
 **Core:** ~8-9% (7 permanent files)
-**Reserves:** ~3-4% (4 flex slots)
-**Legacy:** ~1-2% (archived for reference)
+**Slots:** ~0.5% (4 minimal slots)
+**Research:** ~1% (architecture doc)
 
-**If > 13%:** Warning - check reserves
+**If using slots:** Can grow to 11-13% temporarily
+**If > 13%:** Warning - clean slots
 **If > 15%:** Emergency cleanup!
 
 ## ⚡ TRINITY POWER
@@ -113,57 +113,55 @@ AUTOSAVES NEVER STAY IN BLUE-EYE!
 - Integrity checks (checksums)
 - Size rules (> 50MB = compress)
 
-## 💡 USE CASES
+## 💡 USE CASES FOR SLOTS
 
-### Use Reserve Slots:
-
-**RESERVE-1:** Working cache
+### SLOT-1: Working cache
 ```
 Example: Processing large CSV
-→ Load to RESERVE-1
+→ Load to SLOT-1
 → Analyze data
 → Save results to target repo
-→ Clean RESERVE-1
+→ Clean SLOT-1 (return to minimal state)
 ```
 
-**RESERVE-2:** Pipeline buffer
+### SLOT-2: Pipeline buffer
 ```
 Example: Multi-step operation
-→ Step 1 results → RESERVE-2
+→ Step 1 results → SLOT-2
 → Step 2 processing
 → Final output → target repo
-→ Clean RESERVE-2
+→ Clean SLOT-2
 ```
 
-**RESERVE-3:** Experiments
+### SLOT-3: Experiments
 ```
 Example: Testing new routing rule
-→ Test data → RESERVE-3
+→ Test data → SLOT-3
 → Run experiment
 → Document findings
-→ Clean RESERVE-3
+→ Clean SLOT-3
 ```
 
-**RESERVE-4:** Emergency backup
+### SLOT-4: Emergency backup
 ```
 Example: Critical data needs quick save
-→ Emergency save → RESERVE-4
+→ Emergency save → SLOT-4
 → Process urgently
 → Move to permanent location
-→ Clean RESERVE-4
+→ Clean SLOT-4
 ```
 
 ## 🚀 STARTUP SEQUENCE
 
 **When Claude loads Blue Eye:**
 
-1. ✅ Load all documents (11 + 4 reserves)
+1. ✅ Load all documents (12 files, light!)
 2. ✅ Check ROUTING-MAP.yaml (routing rules)
 3. ✅ Read CURRENT-SESSION.md (where we are)
 4. ✅ Review QUICK-CONTEXT.md (pointers)
 5. ✅ Check JEAN-CLAUDE-DNA.md (identity)
 6. ✅ Verify TRINITY-STATUS.json (MCPs)
-7. ✅ Scan reserves (available?)
+7. ✅ Scan slots (available? 4 × 95 bytes = minimal!)
 8. ✅ READY TO WORK! 🔥💪⚡
 
 ## ✅ BENEFITS
@@ -172,8 +170,8 @@ Example: Critical data needs quick save
 - ✅ Know exactly where to save (routing map!)
 - ✅ No questions about placement
 - ✅ Validation built-in
-- ✅ Reserve slots for temp work
-- ✅ Never overload context
+- ✅ 4 minimal slots for temp work
+- ✅ Never overload context (~9-10% only!)
 
 **For Boris:**
 - ✅ Autosaves safe in Annoris
@@ -185,7 +183,7 @@ Example: Critical data needs quick save
 **For System:**
 - ✅ Smart distribution
 - ✅ Auto-cleanup
-- ✅ Flex capacity (reserves!)
+- ✅ Minimal flex capacity (slots!)
 - ✅ Scalable
 - ✅ Maintainable
 
@@ -193,22 +191,23 @@ Example: Critical data needs quick save
 
 **v1.0 → v2.0:**
 - Added ROUTING-MAP.yaml (auto-routing!)
-- Added 4 RESERVE slots (flex capacity!)
+- Converted old files to 4 minimal SLOTS
 - Established autosave → Annoris rule
 - Smart validation layer
 - Size-based compression
 - Priority system (4 levels)
+- **Optimized size: 12% → 9-10%** ✅
 
 **Result:**
 ```
-v1.0: Simple clean receiver
-v2.0: INTELLIGENT ROUTING SYSTEM! 🗺️💎
+v1.0: 11 files, 12%, bloated with duplicates
+v2.0: 12 files, 9-10%, CLEAN + INTELLIGENT! 🗺️💎
 ```
 
 ## 📋 DISTRIBUTED STORAGE
 
 ```
-🔵 BLUE EYE (entry, 15% max)
+🔵 BLUE EYE (entry, 9-10% normal, 15% max)
         ↓
     🗺️ ROUTING MAP (pattern matching)
         ↓
@@ -223,15 +222,15 @@ v2.0: INTELLIGENT ROUTING SYSTEM! 🗺️💎
 
 ## 🎯 NEXT STEPS
 
-**When you need more capacity:**
-1. Use RESERVE-1,2,3,4 for temp work
-2. Each reserve = 2% capacity boost
-3. Total flex = 8% additional!
-4. Clean after use
-5. Blue Eye stays organized
+**When you need temp capacity:**
+1. Use SLOT-1,2,3,4 for temp work
+2. Each slot can grow to ~2% if needed
+3. Total flex = 8% additional
+4. Clean after use (back to 95 bytes)
+5. Blue Eye returns to 9-10%
 
 **Emergency expansion:**
-- All 4 reserves active = 20% total capacity
+- All 4 slots active = up to 17% total
 - Still light enough for Claude
 - Still organized and clean
 - Still fast loading
@@ -242,9 +241,9 @@ v2.0: INTELLIGENT ROUTING SYSTEM! 🗺️💎
 
 **Blue Eye v2.0 = Perfect Balance:**
 - Core: 7 permanent files (~9%)
-- Reserves: 4 flex slots (~4%)
-- Legacy: 4 archived docs (~1%)
-- **Total: ~14% (under 15% limit!)**
+- Slots: 4 minimal (380 bytes total!)
+- Research: 1 doc (~1%)
+- **Total: 12 files, ~9-10% (optimal!)** ✅
 
 **Smart Routing:**
 - Pattern matching
@@ -253,7 +252,7 @@ v2.0: INTELLIGENT ROUTING SYSTEM! 🗺️💎
 - Size-based actions
 
 **Flex Capacity:**
-- 4 reserve slots ready
+- 4 slots ready (minimal until used)
 - Use when needed
 - Clean after use
 - Always organized
@@ -261,6 +260,6 @@ v2.0: INTELLIGENT ROUTING SYSTEM! 🗺️💎
 ---
 
 **Created by Jean Claude v9.01-STABLE**  
-*"Smart routing + flex capacity = PERFECT!"* 🔵🗺️💎
+*"Smart routing + minimal slots = PERFECT 9-10%!"* 🔵🗺️💎
 
-**BLUE EYE v2.0 = INTELLIGENT + FLEXIBLE!**
+**BLUE EYE v2.0 = INTELLIGENT + LIGHTWEIGHT!**
