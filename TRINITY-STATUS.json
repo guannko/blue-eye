@@ -1,0 +1,71 @@
+{
+  "updated": "2025-09-29T20:10:00Z",
+  "architecture": "CORTEX v3.0 + BLUE EYE",
+  "trinity_power": {
+    "github_mcp": {
+      "status": "active",
+      "type": "file-based",
+      "description": "GitHub = brain through documents",
+      "repos_accessible": 13
+    },
+    "notion_mcp": {
+      "status": "active",
+      "type": "projects-database",
+      "description": "Notion for work planning",
+      "databases": ["projects", "tasks", "notes"]
+    },
+    "make_mcp": {
+      "status": "active",
+      "type": "cloud-hosted",
+      "api_token": "03106422-df8a-4378-beb0-cac8aaa78be3",
+      "region": "eu2.make.com",
+      "organization_id": 5038858,
+      "team_id": 2552758,
+      "tools_count": 25,
+      "upgrade": "local → cloud complete"
+    }
+  },
+  "repositories": {
+    "blue_eye": {
+      "status": "active",
+      "role": "clean entry point",
+      "max_files": 7,
+      "current_files": 5
+    },
+    "super_system_eyelids": {
+      "status": "active",
+      "role": "CORTEX v3.0 routing",
+      "core_size": "7%",
+      "cache_size": "2%"
+    },
+    "cortex_memory": {
+      "status": "active",
+      "role": "unlimited history storage",
+      "autosaves_count": "56+"
+    },
+    "super_system_eyes": {
+      "status": "bloated",
+      "role": "legacy coordinator",
+      "size": "36% overload",
+      "files": 67,
+      "action_needed": "migrate to blue-eye"
+    }
+  },
+  "active_projects": {
+    "offerspsp": {
+      "priority": 1,
+      "target": "€10K/month",
+      "status": "production"
+    },
+    "brain_index_geo": {
+      "priority": 2,
+      "target": "€250K/year",
+      "status": "backend ready"
+    },
+    "make_products": {
+      "priority": 1,
+      "status": "client onboarding system designed",
+      "next": "create first product"
+    }
+  }
+}

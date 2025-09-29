@@ -1,0 +1,23 @@
+# Blue Eye Cleanup Rules
+# Keep it clean - max 7 files!
+
+# Temporary files
+*.tmp
+*.log
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Node/Python temp
+node_modules/
+__pycache__/
+*.pyc
+
+# Keep blue-eye minimal!
+# Any extra data goes to eyelids routing
