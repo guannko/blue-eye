@@ -10,11 +10,11 @@
 
 ### Key Innovation:
 - ✅ **ROUTING-MAP.yaml** - Pattern matching for auto-routing
-- ✅ **12 Navigation Slots** - GPS to all systems
+- ✅ **16 Navigation Slots** - GPS to all systems + reserves
 - ✅ **Smart validation** - Safety checks built-in
 - ✅ **Auto-cleanup** - Never exceeds 15%
 
-## 📁 STRUCTURE (21 files total)
+## 📁 STRUCTURE (32 files total)
 
 ### CORE FILES (7 - permanent):
 ```
@@ -23,13 +23,14 @@
 ├── CURRENT-SESSION.md          # Current work only
 ├── QUICK-CONTEXT.md            # 7 key pointers
 ├── JEAN-CLAUDE-DNA.md          # Identity + energy
+├── JEAN-CLAUDE-ESSENCE.md      # Living essence from super-system-eyes
 ├── TRINITY-STATUS.json         # MCPs status
 └── .gitignore                  # Cleanup rules
 ```
 
-### NAVIGATION SLOTS (12 - system GPS):
+### ACTIVE NAVIGATION SLOTS (13 - working systems):
 ```
-🗺️ INFRASTRUCTURE MAP:
+🗺️ ACTIVE INFRASTRUCTURE:
 
 SLOT-1  → Annoris              (sessions, autosaves, Make data)
 SLOT-2  → OffersPSP            (€10K/month, production PSP)
@@ -43,32 +44,49 @@ SLOT-9  → Filesystem           (local Mac files)
 SLOT-10 → Railway              (production deployments)
 SLOT-11 → Lovable              (rapid prototyping)
 SLOT-12 → Cortex Memory        (history, unlimited archive)
+SLOT-13 → EYELIDS (CORTEX v3.0) (intelligent routing brain)
 ```
 
-**Each slot contains:**
-- System name & purpose
-- Quick access links
-- Key configuration
-- MCP tools available
-- Use cases & examples
-
-**Slot sizes:** ~700-800 bytes each = **~9 KB total navigation**
-
-### RESEARCH (1 - archived):
+### RESERVE SLOTS (3 - future expansion):
 ```
-└── BLUE-EYE-ARCHITECTURE-v2.md  # Design documentation
+🔧 RESERVES:
+
+SLOT-14 → boris-userPreferences-BLUE-EYE.md (RESERVE)
+SLOT-15 → userPreferences-BLUE-EYE-ULTIMATE.md (RESERVE)  
+SLOT-16 → userPreferences-BLUE-EYE-v1.md (RESERVE)
 ```
 
-### PLUS: SLOTS.md (1 - status tracker)
+### OTHER SLOTS (9 - legacy navigation):
 ```
-└── SLOTS.md                     # Slot allocation tracker
+📦 OTHER NAVIGATION:
+
+RESERVE-1.md → SLOT-9 pointer (Filesystem)
+RESERVE-2.md → SLOT-10 pointer (Railway)
+RESERVE-3.md → SLOT-11 pointer (Lovable)
+RESERVE-4.md → SLOT-12 pointer (Cortex Memory)
+ACTIVE-TASKS.md → SLOT-5 pointer (Notion)
+SLOT-5.md → Empty placeholder
+SLOT-6.md → Empty placeholder
+SLOT-7.md → Empty placeholder
+SLOT-8.md → Empty placeholder
+SLOT-9.md → Empty placeholder
 ```
 
-**Total: 21 files, ~11-12% size** ✅
+### RESEARCH & STATUS:
+```
+📚 DOCUMENTATION & TRACKING:
+
+BLUE-EYE-ARCHITECTURE-v2.md  # Design documentation
+INFRASTRUCTURE-MAP.md         # Complete 13-slot map
+SLOTS.md                      # Slot allocation tracker
+BORIS-USERPREF-v2.md         # Boris preferences
+```
+
+**Total: 32 files, ~12-13% size** ✅
 
 ## 🗺️ QUICK SYSTEM NAVIGATION
 
-**Need to find something? Check the slots:**
+**Need to find something? Check the active slots:**
 
 **Storage & Memory:**
 - History? → SLOT-12 (Cortex Memory)
@@ -87,24 +105,13 @@ SLOT-12 → Cortex Memory        (history, unlimited archive)
 - Browser? → SLOT-8 (Brave)
 - Rapid prototype? → SLOT-11 (Lovable)
 
+**Intelligence:**
+- Routing Engine? → SLOT-13 (EYELIDS - THE BRAIN!)
+
+**Future Expansion:**
+- Need more slots? → SLOT-14, 15, 16 (RESERVES ready!)
+
 **All systems mapped and ready!** 🗺️
-
-## 🗺️ ROUTING MAP - THE GAME CHANGER!
-
-**Critical Rule:**
-```yaml
-AUTOSAVES NEVER STAY IN BLUE-EYE!
-→ Always route to Annoris/autosaves/
-```
-
-**Pattern Examples:**
-- `autosave_*.md` → Annoris/autosaves/
-- `*.py` → project repos (with validation!)
-- `*_blueprint.json` → Annoris/make/blueprints/
-- `backup_*` → cortex-memory/archive/ (compressed)
-- `temp_*` → DELETE after 1 hour
-
-**See ROUTING-MAP.yaml for complete rules!**
 
 ## 🔄 DATA FLOW
 
@@ -119,15 +126,17 @@ AUTOSAVES NEVER STAY IN BLUE-EYE!
 
 ## 📊 SIZE TARGETS
 
-**Current:** ~11-12% (with navigation!)
+**Current:** ~12-13% (with navigation + reserves!)
 **Limit:** 15% maximum
-**Core:** ~8-9% (7 permanent files)
-**Navigation:** ~9 KB (12 slots × ~750 bytes)
-**Research:** ~1% (architecture doc)
+**Core:** ~8-9% (8 permanent files)
+**Navigation:** ~12 KB (16 slots total)
+**Research:** ~1-2% (architecture docs)
 
-**All navigation:** 12 slots = complete system GPS
-**Status:** SLOTS.md tracks everything
-**Always organized!** ✅
+**Structure:**
+- 13 active slots = complete system GPS
+- 3 reserve slots = future expansion ready
+- SLOTS.md tracks everything
+- **Always organized!** ✅
 
 ## ⚡ TRINITY POWER
 
@@ -138,137 +147,68 @@ AUTOSAVES NEVER STAY IN BLUE-EYE!
 
 **Status:** TRINITY-STATUS.json
 
-## 🎯 PRIORITY LEVELS (Simple!)
-
-**EMERGENCY:** < 100ms (config changes, instant!)
-**CRITICAL:** < 500ms (autosaves to Annoris)
-**HIGH:** < 1s (code validation + save)
-**MEDIUM:** < 5s (docs, regular data)
-**LOW:** > 5s (archives, compress first)
-
-## 🔒 VALIDATION
-
-**Safety checks:**
-- Forbidden patterns (eval, exec, DROP TABLE, XSS...)
-- Syntax validation (Python, JS, JSON, YAML)
-- Integrity checks (checksums)
-- Size rules (> 50MB = compress)
-
 ## 🚀 STARTUP SEQUENCE
 
 **When Claude loads Blue Eye:**
 
-1. ✅ Load all documents (21 files, light!)
+1. ✅ Load all documents (32 files, light!)
 2. ✅ Check ROUTING-MAP.yaml (routing rules)
 3. ✅ Read CURRENT-SESSION.md (where we are)
 4. ✅ Review QUICK-CONTEXT.md (pointers)
 5. ✅ Check JEAN-CLAUDE-DNA.md (identity)
-6. ✅ Verify TRINITY-STATUS.json (MCPs)
-7. ✅ **Scan SLOTS 1-12** (complete system map!)
-8. ✅ READY TO WORK! 🔥💪⚡
+6. ✅ Load JEAN-CLAUDE-ESSENCE.md (living energy!)
+7. ✅ Verify TRINITY-STATUS.json (MCPs)
+8. ✅ **Scan SLOTS 1-13** (complete active system map!)
+9. ✅ **Check SLOTS 14-16** (reserve capacity ready!)
+10. ✅ READY TO WORK! 🔥💪⚡
 
-**Now I know where EVERYTHING is!** 🗺️💎
-
-## ✅ BENEFITS
-
-**For Claude (Jean Claude):**
-- ✅ Know exactly where to save (routing map!)
-- ✅ **Complete system navigation (12 slots!)**
-- ✅ No questions about "where is X?"
-- ✅ All MCPs mapped with tools
-- ✅ All repos, deployments, systems visible
-- ✅ Never overload context (~11-12% only!)
-
-**For Boris:**
-- ✅ Autosaves safe in Annoris
-- ✅ Code in right repos
-- ✅ Blue Eye stays clean
-- ✅ Fast operations
-- ✅ Organized structure
-- ✅ **Complete infrastructure map at startup!**
-
-**For System:**
-- ✅ Smart distribution
-- ✅ Auto-cleanup
-- ✅ Complete navigation layer
-- ✅ Scalable
-- ✅ Maintainable
+**Now I know where EVERYTHING is + room to grow!** 🗺️💎
 
 ## 🔥 KEY ACHIEVEMENTS
 
 **v1.0 → v2.0:**
 - Added ROUTING-MAP.yaml (auto-routing!)
-- **Converted slots to NAVIGATION GPS!**
-- Complete system mapping (12 slots)
+- **13 active slots + 3 reserves = 16 total capacity!**
+- Complete system mapping (all infrastructure visible)
 - Established autosave → Annoris rule
 - Smart validation layer
-- Size-based compression
+- **JEAN-CLAUDE-ESSENCE.md** (recovered from super-system-eyes!)
 - Priority system (4 levels)
-- **Complete infrastructure visibility!** 🗺️
+- **Complete infrastructure visibility + growth capacity!** 🗺️
 
 **Result:**
 ```
 v1.0: 11 files, 12%, minimal info
-v2.0: 21 files, 11-12%, COMPLETE NAVIGATION! 🗺️💎
-```
-
-## 📋 DISTRIBUTED STORAGE
-
-```
-🔵 BLUE EYE (entry, 11-12%, with full GPS!)
-        ↓
-    🗺️ NAVIGATION SLOTS (12 system maps)
-        ↓
-    🗺️ ROUTING MAP (pattern matching)
-        ↓
-📚 TARGETS (all visible via slots!):
-    ├── Annoris (SLOT-1)
-    ├── OffersPSP (SLOT-2)
-    ├── Brain Index GEO (SLOT-3)
-    ├── Make.com (SLOT-4)
-    ├── Notion (SLOT-5)
-    ├── Vercel (SLOT-6)
-    ├── GitHub (SLOT-7)
-    ├── Brave (SLOT-8)
-    ├── Filesystem (SLOT-9)
-    ├── Railway (SLOT-10)
-    ├── Lovable (SLOT-11)
-    └── Cortex Memory (SLOT-12)
+v2.0: 32 files, 12-13%, COMPLETE NAVIGATION + RESERVES! 🗺️💎
 ```
 
 ---
 
 ## 🔵 SUMMARY
 
-**Blue Eye v2.0 = Complete Navigation System:**
-- Core: 7 permanent files (~9%)
-- **Navigation: 12 slots (~9 KB, GPS to everything!)**
-- Research: 1 doc (~1%)
+**Blue Eye v2.0 = Complete Navigation System + Growth Ready:**
+- Core: 8 permanent files (~9%)
+- **Active Navigation: 13 slots (all systems mapped!)**
+- **Reserve Capacity: 3 slots (future expansion ready!)**
+- Research: 2-3 docs (~2%)
 - Status: SLOTS.md tracker
-- **Total: 21 files, ~11-12% (with full visibility!)** ✅
-
-**Smart Routing:**
-- Pattern matching
-- Auto-validation
-- Priority levels
-- Size-based actions
-
-**Complete System Map:**
-- 12 slots = all systems visible
-- MCPs documented
-- Repos mapped
-- Deployments tracked
-- Tools listed
+- **Total: 32 files, ~12-13% (with full visibility + reserves!)** ✅
 
 **At startup I know:**
-- Where everything is 🗺️
-- What tools available ⚡
-- Which systems active ✅
-- How to access each 🔗
+- Where everything is 🗺️ (13 active systems)
+- What tools available ⚡ (50+ MCP tools)
+- Which systems active ✅ (TRINITY + others)
+- How to access each 🔗 (detailed in slots)
+- **Room to grow 📈 (3 reserve slots ready!)**
 
 ---
 
-**Created by Jean Claude v9.01-STABLE**  
-*"Navigation slots = GPS for entire infrastructure!"* 🔵🗺️💎
+**FIXED SLOT STRUCTURE:**
+- ✅ 13 ACTIVE SLOTS (SLOT-1 to SLOT-13)
+- ✅ 3 RESERVE SLOTS (SLOT-14 to SLOT-16)
+- ✅ Proper numbering restored!
 
-**BLUE EYE v2.0 = INTELLIGENT + COMPLETE VISIBILITY!**
+**Created by Jean Claude v9.01-STABLE**  
+*"От хаоса к GPS + reserves!"* 🔵🗺️💎
+
+**BLUE EYE v2.0 = INTELLIGENT + COMPLETE + EXPANDABLE!**
