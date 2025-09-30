@@ -1,3 +1,3 @@
-# SLOT-15
+# → SLOT-15.md
 
-*RESERVE*
+*redirect*
