@@ -1,6 +1,3 @@
-# SLOT-15 (RESERVE)
+# SLOT-15
 
-**Status:** AVAILABLE  
-**Purpose:** Reserve slot for future expansion
-
-Ready when needed.
+*RESERVE*
