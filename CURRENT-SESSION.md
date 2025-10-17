@@ -4,37 +4,41 @@
 **Status:** 🟢 ACTIVE - All systems operational!  
 **Time:** Cyprus Time
 
-## 🚨 TOKEN MONITORING RULE (NEW!):
+## 🚨 TOKEN MONITORING RULE (CRITICAL!):
 
-**CRITICAL PROTOCOL:**
-- **Monitor:** Token usage каждый tool call
-- **Alert threshold:** Когда остаётся 20,000-50,000 токенов
-- **Action:** 🚨 Сигнал Boris → Save session → Switch to new chat
-- **Purpose:** Никогда не терять контекст из-за лимита!
+**PROTOCOL:**
+- **Monitor:** Token usage после каждого tool call
+- **Alert threshold:** 🚨 Когда остаётся **2,000-3,000 токенов**
+- **Save cost:** ~1,500-2,000 токенов (tool call + response)
+- **Action:** Signal Boris → Save to Annoris → New chat
+- **Never:** Lose context due to token limit!
 
 **Current status:**
 - Total limit: 190,000 tokens
-- Used: ~97,000 (~51%)
-- Remaining: ~93,000 ✅
-- Alert zone: < 50,000 tokens
+- Used: ~98,000 (~51%)
+- Remaining: ~92,000 ✅
+- Alert zone: < 3,000 tokens 🚨
+
+**Save destinations:**
+- ✅ **Annoris repo** - все autosaves/sessions
+- ✅ **blue-eye repo** - только протоколы/правила
 
 ## ✅ TRINITY POWER CHECK:
 
 **GitHub MCP:** 🟢 WORKING
 - 14 repos accessible
-- All major projects: brain-index-geo-monolith, brain-static, blue-eye, super-system-eyelids
+- All major projects available
 
 **Notion MCP:** 🟢 WORKING  
 - Workspace accessible
-- Brain Index docs, roadmaps, Jean Claude brain
+- Brain Index docs ready
 
 **Vercel MCP:** 🟢 WORKING
-- Team: Annoris ready for deployments
+- Team: Annoris deployment ready
 
 **Make.com MCP:** 🟢 WORKING
-- User: guann ko
-- Region: Europe/Kyiv
 - Full API access
+- EU2 region
 
 **Result:** All 50+ MCP tools operational! 💪
 
@@ -45,18 +49,17 @@
 - ✅ **Solution:** Работаем ТОЛЬКО на Sonnet 4.5
 - 🚫 **Never use Haiku 4.5 again!**
 
-## 📊 PREVIOUS SESSION SUMMARY:
+## 📊 PREVIOUS SESSION:
 
 **October 12, 2025:**
 - ✅ Brain Index Site - English template restored
 - ✅ SEO от Li added
-- ✅ GitHub + Vercel deployment успешно
-- ✅ Mission accomplished!
+- ✅ Deployment успешно
 
 ---
 
 **SESSION STATUS:** ACTIVE ✅  
-**NEXT:** Waiting for Boris direction  
-**MONITORING:** Token usage tracking активен 🚨
+**MONITORING:** Token tracking с правильным threshold 🚨  
+**READY:** Для работы! 💪
 
-**"Мониторинг токенов = никогда не теряем контекст!"** 💪🔥
+**"2-3k токенов = время сохраняться!"** 🔥
