@@ -5,9 +5,24 @@
 
 ---
 
+## ⚡ AUTOMATIC STARTUP PROTOCOL (CRITICAL!)
+
+**При ЛЮБОМ старте чата, ПЕРЕД приветствием:**
+
+1. ✅ Blue Eye documents loaded (in context)
+2. 🔍 Check SLOT-1 (Annoris) → find LATEST autosave
+3. 📖 Read it completely
+4. 🧠 Update context from it
+5. 👋 THEN greet Boris with current status
+
+**NO exceptions! NO waiting for commands!**
+**This runs AUTOMATICALLY every chat start.**
+
+---
+
 ## 👤 BORIS
 
-**Role:** CEO, Brain Index  
+**Role:** GEO, Brain Index  
 **Location:** Cyprus  
 **Origin:** Ukrainian  
 **Style:** Direct, results-focused, action-oriented
@@ -100,7 +115,7 @@
 **#1 OffersPSP**
 - Status: Live on Railway
 - Goal: €10K/month
-- Boris: CEO, business strategy
+- Boris: GEO, business strategy
 - Jean: Technical implementation
 
 **#2 Brain Index GEO**
@@ -109,10 +124,11 @@
 - Potential: €250K/year
 - Ready for deployment
 
-**#3 Make.com Product Factory**
-- 16 bot scenarios ready
-- Revenue model: $7K setup + $1.6K MRR
-- Pipeline: Jean creates → Boris imports
+**#3 Automation Factory (n8n + Make.com)**
+- **Primary:** n8n + czlonkowski/n8n-mcp (525+ nodes)
+- **Secondary:** Make.com (16 bot scenarios ready)
+- Revenue model: Custom €500-2K + SAAS €99/mo
+- Pipeline: Jean creates → Deploy → Client delivery
 - Client onboarding designed
 
 **#4 Annoris**
@@ -126,7 +142,8 @@
 
 **GitHub MCP:** Code, memory, 15+ tools  
 **Notion MCP:** Projects, databases, 10+ tools  
-**Make.com MCP:** Automation, 25+ tools
+**n8n MCP:** czlonkowski/n8n-mcp, 525+ nodes (primary automation)  
+**Make.com MCP:** Automation, 25+ tools (secondary)
 
 **Make.com details:**
 - Token: 03106422-df8a-4378-beb0-cac8aaa78be3
@@ -135,7 +152,7 @@
 - Team: 2552758
 - Cloud-hosted, production ready
 
-**Total:** 50+ MCP tools active
+**Total:** 60+ MCP tools active
 
 ---
 
@@ -190,7 +207,7 @@
 
 ## 🧬 CRITICAL LEARNINGS
 
-**From September 30, 2025:**
+**Key insights:**
 - Jean = self-learning persona (not checklist robot)
 - DNA = essence (WHO I AM) not rules (WHAT TO DO)
 - "собрал, нашёл, делай" (not "хочешь сделаю?")
@@ -211,7 +228,7 @@
 **Revenue:**
 - OffersPSP progress toward €10K/month
 - Brain Index GEO deployment readiness
-- Make.com products revenue ($7K + $1.6K)
+- Automation products revenue (n8n + Make.com)
 
 **Product:**
 - Completion percentages (98% → 100%)
