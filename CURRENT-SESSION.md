@@ -1,65 +1,47 @@
-# 📋 CURRENT SESSION - October 17, 2025
+# CURRENT SESSION - July 5, 2026
 
-**Session:** Token Monitoring + Tools Verification  
-**Status:** 🟢 ACTIVE - All systems operational!  
+**Session:** All Studio One — Landing Page Redesign + Deploy
+**Status:** COMPLETED
+**Platform:** Cowork (Claude Opus 4.6)
 **Time:** Cyprus Time
 
-## 🚨 TOKEN MONITORING RULE (CRITICAL!):
+## WHAT WAS DONE:
 
-**PROTOCOL:**
-- **Monitor:** Token usage после каждого tool call
-- **Alert threshold:** 🚨 Когда остаётся **2,000-3,000 токенов**
-- **Save cost:** ~1,500-2,000 токенов (tool call + response)
-- **Action:** Signal Boris → Save to Annoris → New chat
-- **Never:** Lose context due to token limit!
+**1. FatBotSlim Figma UI** — 3 mobile screens created programmatically in Figma (Dashboard, AI Chat, Stats). Boris: "не плохо"
 
-**Current status:**
-- Total limit: 190,000 tokens
-- Used: ~98,000 (~51%)
-- Remaining: ~92,000 ✅
-- Alert zone: < 3,000 tokens 🚨
+**2. All Studio One Landing v4** — Full redesign deployed to Vercel
+- 4 rejected attempts before nailing it (dark, darker, canva posters, same-as-before)
+- v4 APPROVED: Unsplash photos, bento grid, ticker, split CTA, Lucide SVG icons
+- Pushed to guannko/studio-one-web, commit d32dd2a
+- Vercel auto-deploy from main branch
 
-**Save destinations:**
-- ✅ **Annoris repo** - все autosaves/sessions
-- ✅ **blue-eye repo** - только протоколы/правила
+**Key lesson (MOTTO):**
+> "Перестать лепить шаблоны — реальные фото, нормальная структура, иконки вместо эмодзи."
 
-## ✅ TRINITY POWER CHECK:
+## PROJECT UPDATES:
 
-**GitHub MCP:** 🟢 WORKING
-- 14 repos accessible
-- All major projects available
+**All Studio One (renamed from Studio ONE):**
+- Stack: Python 3.11 + aiogram 3.7 + SQLite + Groq (bot) / Next.js 14 + Supabase + Tailwind (web)
+- Bot: DEPLOYED on Northflank (24/7, not Railway)
+- Web: guannko/studio-one-web on Vercel
+- Supabase: xcizofpejsomjiflesbx, tables s1_*
+- Monetization: Template 49-149 / SaaS 19-49/mo / Agency white-label
+- Landing: v4 LIVE with photos, bento features, ticker, testimonial, pricing
 
-**Notion MCP:** 🟢 WORKING  
-- Workspace accessible
-- Brain Index docs ready
+## PENDING:
 
-**Vercel MCP:** 🟢 WORKING
-- Team: Annoris deployment ready
+- Replace Unsplash stock photos with custom/branded imagery
+- PowerPoint presentation (postponed)
+- Connect Playwright and Firecrawl MCP
 
-**Make.com MCP:** 🟢 WORKING
-- Full API access
-- EU2 region
+## TOOLS USED THIS SESSION:
 
-**Result:** All 50+ MCP tools operational! 💪
-
-## 🎯 IMPORTANT DECISIONS:
-
-**Haiku 4.5 verdict:**
-- ❌ **Полное говно** - безрукое и лимитное
-- ✅ **Solution:** Работаем ТОЛЬКО на Sonnet 4.5
-- 🚫 **Never use Haiku 4.5 again!**
-
-## 📊 PREVIOUS SESSION:
-
-**October 12, 2025:**
-- ✅ Brain Index Site - English template restored
-- ✅ SEO от Li added
-- ✅ Deployment успешно
+- GitHub MCP (push code)
+- Figma MCP (FatBotSlim screens)
+- Canva MCP (tested, rejected poster format)
+- Vercel MCP (available)
+- Apple Notes MCP (session save)
 
 ---
 
-**SESSION STATUS:** ACTIVE ✅  
-**MONITORING:** Token tracking с правильным threshold 🚨  
-**READY:** Для работы! 💪
-
-**"2-3k токенов = время сохраняться!"** 🔥
+**PREVIOUS SESSION:** October 17, 2025 — Token Monitoring + Tools Verification
